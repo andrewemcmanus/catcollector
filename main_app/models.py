@@ -11,3 +11,10 @@ class Cat(models.Model):
 # make a migration in the terminal
     def __str__(self):
         return self.name
+
+class CatToy(models.Model):
+    name = models.CharField(max_length=100)
+    color = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
